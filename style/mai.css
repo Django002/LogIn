@@ -3,23 +3,26 @@
     src: url(/LogIn/font/Poppins/Poppins-Medium.ttf);
 }
 
+html {
+  overflow-y: hidden;
+}
 
 * {
 	padding: 0px;
 	margin: 0px;
+    border: none;
 }
 
 .blocbacgraund{
     display: flex;
+    height: 100%;
 }
 
 .blocregist{
     display: block;
     width: 404px;
     height: 638px;
-    margin-top: 202px;
-    margin-left: 175px;  
-    padding: 50px;
+    padding: 160px 250px 160px 250px;
 }
 
 .form_regist{
@@ -30,13 +33,13 @@
 }
 
 .photo{
-    width: 100%;
-    height: 1190px;
+    width: 45%;
     background-image: url(/LogIn/img/chris-lee-70l1tDAI6rM-unsplash\ 1\ \(1\).png);
-    background-repeat: no-repeat;
-    object-fit: cover;
-    margin-left: 175px;
+    background-size: cover;
+    margin-left: auto;
 }
+
+
 
 .input_{
     margin-top: 20px;
@@ -50,6 +53,7 @@
     border-radius: 10px;
     border: 1px solid rgb(202, 202, 202);
     padding: 5px;  
+    
 }
 
 .Sigup{
@@ -66,6 +70,7 @@
 
 .Sigup:hover{
     background-color: rgb(87, 122, 62);
+    cursor: pointer;
 }
 
 h1{
@@ -83,4 +88,22 @@ input::placeholder {
     color: rgb(209, 209, 209); 
     font-size: 12px;
     font-family: 'Poppins-Medium.ttf';
+}
+
+.input_text:focus{
+    border: 1px solid rgb(131, 28, 28);
+}
+
+.input_radio{
+    display: flex;
+    gap: 10px;
+}
+
+.input_radio span{
+    font-size: 14;
+    font-family: 'Poppins-Medium.ttf';
+}
+
+a{
+    color: black;
 }
