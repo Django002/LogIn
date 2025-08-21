@@ -182,4 +182,11 @@ p{
     border: 2px solid rgba(228, 28, 28, 0.466);
     padding: 5px;  
     box-shadow: 0 0 0 3px rgba(228, 31, 31, 0.192);
+    
+}
+
+.novalideMesage{
+    color: rgb(235, 9, 9); 
+    font-size: 12px;
+    font-family: 'Poppins-Medium.ttf';
 }
