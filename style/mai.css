@@ -24,6 +24,7 @@ html {
     height: 638px;
     margin-top: 202px;
     margin: auto;
+    padding: 30px;
 }
 
 .form_regist{
@@ -102,7 +103,7 @@ input::placeholder {
 .input_radio{
     display: flex;
     gap: 10px;
-    margin-top: 60px;
+    margin-top: 20px;
 }
 
 .input_radio span{
@@ -110,22 +111,75 @@ input::placeholder {
     font-family: 'Poppins-Medium.ttf';
 }
 
-a{
+p{
+    font-size: 13px;
+    font-family: 'Poppins-Medium.ttf';
+}
+
+.input_radio a{
     color: black;
 }
 
-.pagargaf_or{
-    margin-top: 60px;
-    margin-bottom: 60px;
-    border-top: 2px solid rgba(110, 109, 109, 0.25);
-    width: 100%;
-}
+
 
 .pagargaf_or p{
-    position: absolute;
+    display: flex;
     width: 20px;
-    top: 700px;
-    left: 370px;
     background-color: rgb(255, 255, 255);
-    text-align: center;
+    justify-content: center;
+    margin-left: 190px;
+}
+
+.pagargaf_or::before {
+    content: "";
+    position: absolute;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    width: 410px;
+    height: 2px;
+    border-top: 2px solid rgba(110, 109, 109, 0.25);
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+.open_login{
+    display: flex;
+    font-size: 15px;
+    font-family: 'Poppins-Medium.ttf';
+    justify-content: center;
+    gap: 10px;
+    margin-top: 115px;
+}
+
+
+.Login{
+    display: block;
+    position: absolute;
+    left: 280px;
+    top: 160px;
+    width: 404px;
+    height: auto;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.hidden{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s ease;
+}
+.nogidden{
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+
+.novalide{
+    width: 404px;
+    height: 25px;
+    border-radius: 10px;
+    border: 2px solid rgba(228, 28, 28, 0.466);
+    padding: 5px;  
+    box-shadow: 0 0 0 3px rgba(228, 31, 31, 0.192);
 }
